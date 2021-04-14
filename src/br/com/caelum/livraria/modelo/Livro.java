@@ -1,5 +1,6 @@
 package br.com.caelum.livraria.modelo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -7,7 +8,7 @@ import java.util.List;
 import javax.persistence.*;
 
 @Entity
-public class Livro {
+public class Livro implements Serializable {
 
 	@Id
 	@GeneratedValue

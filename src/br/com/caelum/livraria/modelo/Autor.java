@@ -3,14 +3,20 @@ package br.com.caelum.livraria.modelo;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 @Entity
-public class Autor {
+public class Autor implements Serializable {
 
 	@Id
 	@GeneratedValue
 	private Integer id;
 	private String nome;
+	private String email;
+
+	public String getEmail() { return email; }
+
+	public void setEmail(String email) { this.email = email; }
 
 	public String getNome() {
 		return nome;

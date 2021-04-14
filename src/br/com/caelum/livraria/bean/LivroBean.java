@@ -5,11 +5,11 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
+import javax.faces.validator.ValidatorException;
 
 import br.com.caelum.livraria.dao.DAO;
 import br.com.caelum.livraria.modelo.Autor;
 import br.com.caelum.livraria.modelo.Livro;
-import sun.security.validator.ValidatorException;
 
 import java.util.List;
 
@@ -20,6 +20,15 @@ public class LivroBean {
 
 	private Livro livro = new Livro();
 	private Integer autorId;
+	private Integer livroId;
+
+	public Integer getLivroId() {
+		return livroId;
+	}
+
+	public void setLivroId(Integer livroId) {
+		this.livroId = livroId;
+	}
 
 	public Integer getAutorId() {
 		return autorId;
@@ -29,6 +38,9 @@ public class LivroBean {
 		this.autorId = autorId;
 	}
 
+	public void carregarLivroPelaId() {
+		this.livro = new DAO<Livro>(Livro.class).buscaPorId(livroId);
+	}
 
 	public Livro getLivro() {
 		return livro;
@@ -91,6 +103,7 @@ public class LivroBean {
 	public void comecaComDigitoUm(FacesContext fc, UIComponent component, Object value) throws ValidatorException {
 		String valor = value.toString();
 		if(!valor.startsWith("1")) {
+			System.out.println("comecaComDigitoUm validation exception throws:");
 			throw new ValidatorException(new FacesMessage("ISBN deveria começar com 1"));
 		}
 	}
