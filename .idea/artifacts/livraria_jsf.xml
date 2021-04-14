@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="livraria-jsf">
+    <output-path>C:/Ferramentas/wildfly-23.0.0.Final/standalone/deployments</output-path>
+    <root id="archive" name="livraria-jsf.war">
+      <element id="javaee-facet-resources" facet="livraria-jsf/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="livraria-jsf" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Mojarra-2.4.0" />
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+        </element>
+      </element>
+      <element id="artifact" artifact-name="livraria-jsf:Web2 exploded" />
+    </root>
+  </artifact>
+</component>
