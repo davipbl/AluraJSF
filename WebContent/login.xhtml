@@ -3,38 +3,39 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	  xmlns:h="http://xmlns.jcp.org/jsf/html"
 	  xmlns:f="http://xmlns.jcp.org/jsf/core"
+	  xmlns:p="http://primefaces.org/ui"
 	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
 
 <ui:composition template="_template.xhtml">
 
 	<ui:define name="titulo">
-		Login
+		<p:outputPanel>Login</p:outputPanel>
 	</ui:define>
 	<ui:define name="conteudo">
 
-		<h:messages globalOnly="true"/>
+		<p:messages globalOnly="true"/>
 
 		<h:form id="login">
-			<fieldset>
-				<legend>Login</legend>
+			<p:fieldset legend="Login">
 				<h:panelGrid columns="3">
 
-					<h:outputLabel value="Email:" for="email" />
-					<h:inputText id="email" value="#{loginBean.usuario.email}" required="true">
-						<f:passThroughAttribute name="type" value="email"/>
-					</h:inputText>
-					<h:message for="email" id="messageEmail"/>
+					<p:outputLabel value="Email:" for="email" />
+					<p:inputText id="email" value="#{loginBean.usuario.email}" required="true" validatorMessage="Email inválido">
+						<f:attribute name="type" value="email"/>
+						<f:passThroughAttribute name="placeholder" value="Email do usuario"/>
+						<f:validateRegex pattern=".+@.+"/>
+					</p:inputText>
+					<p:message for="email" id="messageEmail"/>
 
-					<h:outputLabel value="Senha:" for="senha" />
-					<h:inputText id="senha" value="#{loginBean.usuario.senha}" required="true">
-						<f:passThroughAttribute name="type" value="password"/>
-					</h:inputText>
+					<p:outputLabel value="Senha:" for="senha" />
+					<p:password id="senha" value="#{loginBean.usuario.senha}" feedback="true"/>
 
-					<h:message for="senha" id="messageSenha"/>
 
-					<h:commandButton value="Login" action="#{loginBean.efetuaLogin}"/>
+					<p:message for="senha" id="messageSenha"/>
+
+					<p:commandButton value="Login" action="#{loginBean.efetuaLogin}" update="@form" process="@form"/>
 				</h:panelGrid>
-			</fieldset>
+			</p:fieldset>
 		</h:form>
 	</ui:define>
 </ui:composition>

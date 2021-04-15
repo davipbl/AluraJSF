@@ -11,7 +11,8 @@ import javax.persistence.*;
 public class Livro implements Serializable {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "books_seq_gen")
+	@SequenceGenerator(name="books_seq_gen", sequenceName = "books_id_seq")
 	private Integer id;
 
 	private String titulo;

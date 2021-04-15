@@ -1,15 +1,14 @@
 package br.com.caelum.livraria.modelo;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
 public class Autor implements Serializable {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "autors_seq_gen")
+	@SequenceGenerator(name="autors_seq_gen", sequenceName = "autors_id_seq")
 	private Integer id;
 	private String nome;
 	private String email;

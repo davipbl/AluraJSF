@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Mojarra-2.2.13">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.faces-2.2.13.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

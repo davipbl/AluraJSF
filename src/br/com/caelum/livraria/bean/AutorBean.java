@@ -32,11 +32,15 @@ public class AutorBean {
 		return autor;
 	}
 
+	public void setAutor(Autor autor) {
+		this.autor = autor;
+	}
+
 	public List<Autor> getAutores() {
 		return new DAO<Autor>(Autor.class).listaTodos();
 	}
 
-	public void gravar() {
+	public String gravar() {
 		System.out.println("Gravando autor " + this.autor.getNome());
 
 		if (this.autor.getId() == null) {
@@ -46,8 +50,7 @@ public class AutorBean {
 		}
 		this.autor = new Autor();
 
-
-		//(método retornava String) return "livro?faces-redirect=true";
+		return "livro?faces-redirect=true";
 	}
 
 	public void remover(Autor autor) {
