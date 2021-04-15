@@ -1,27 +1,41 @@
 package br.com.caelum.livraria.bean;
 
 import javax.faces.application.FacesMessage;
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.validator.ValidatorException;
+import javax.faces.view.ViewScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
 
+import br.com.caelum.livraria.dao.AutorDao;
 import br.com.caelum.livraria.dao.DAO;
+import br.com.caelum.livraria.dao.LivroDao;
 import br.com.caelum.livraria.modelo.Autor;
 import br.com.caelum.livraria.modelo.Livro;
+import br.com.caelum.livraria.tx.Transacional;
 
+import java.io.Serializable;
 import java.util.List;
 
 
-@ManagedBean
+@Named
 @ViewScoped
-public class LivroBean {
+public class LivroBean implements Serializable {
 
 	private Livro livro = new Livro();
 	private Integer autorId;
 	private Integer livroId;
 	private List<Livro> livros;
+
+	@Inject
+	LivroDao livroDao;
+
+	@Inject
+	AutorDao autorDao;
+
+	@Inject
+	FacesContext context;
 
 	public Integer getLivroId() {
 		return livroId;
@@ -40,7 +54,7 @@ public class LivroBean {
 	}
 
 	public void carregarLivroPelaId() {
-		this.livro = new DAO<Livro>(Livro.class).buscaPorId(livroId);
+		this.livro = livroDao.buscaPorId(livroId);
 	}
 
 	public Livro getLivro() {
@@ -48,15 +62,14 @@ public class LivroBean {
 	}
 
 	public List<Livro> getLivros() {
-		DAO<Livro> dao = new DAO<Livro>(Livro.class);
 		if(this.livros == null) {
-		this.livros = dao.listaTodos();
+		this.livros = livroDao.listaTodos();
 		}
 		return livros;
 	}
 
 	public List<Autor> getAutores() {
-		return new DAO<Autor>(Autor.class).listaTodos();
+		return autorDao.listaTodos();
 	}
 
 	public List<Autor> getAutoresDoLivro() {
@@ -64,37 +77,37 @@ public class LivroBean {
 	}
 
 	public void gravarAutor() {
-		Autor autor = new DAO<Autor>(Autor.class).buscaPorId(this.autorId); //Função utilizada no livro.xhtml para gravar no backend
+		Autor autor = autorDao.buscaPorId(this.autorId); //Função utilizada no livro.xhtml para gravar no backend
 		this.livro.adicionaAutor(autor);
 		System.out.println("Livro escrito por: " + autor.getNome());
 	}
 
+	@Transacional
 	public void gravar() {
 		System.out.println("Gravando livro " + this.livro.getTitulo());
 
 		if (livro.getAutores().isEmpty()) {
 			//throw new RuntimeException("Livro deve ter pelo menos um Autor.");
-			FacesContext.getCurrentInstance().addMessage("autor",
+			context.addMessage("autor",
 					new FacesMessage("Livro deve ter pelo menos um Autor."));
 			this.livro = new Livro();
 			return;
 		}
 
-
-		DAO<Livro> dao = new DAO<>(Livro.class);
 		if (this.livro.getId() == null) {
-			dao.adiciona(this.livro);
-			this.livros = dao.listaTodos();
+			livroDao.adiciona(this.livro);
+			this.livros = livroDao.listaTodos();
 		} else {
-			dao.atualiza(this.livro);
+			livroDao.atualiza(this.livro);
 		}
 
 		this.livro = new Livro();
 	}
 
+	@Transacional
 	public void remover(Livro livro) {
 		System.out.println("Removendo livro");
-		new DAO<Livro>(Livro.class).remove(livro);
+		livroDao.remove(livro);
 	}
 
 	public void removerAutorDoLivro(Autor autor) {
@@ -103,7 +116,7 @@ public class LivroBean {
 
 	public void carregar(Livro livro) {
 		System.out.println("Carregando livro: " + this.livro.getTitulo());
-		this.livro = livro;
+		this.livro = this.livroDao.buscaPorId(livro.getId());
 	}
 
 	public String formAutor() {
