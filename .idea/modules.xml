@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/livraria-jsf.iml" filepath="$PROJECT_DIR$/livraria-jsf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/livraria-maven.iml" filepath="$PROJECT_DIR$/livraria-maven.iml" />
     </modules>
   </component>
 </project>

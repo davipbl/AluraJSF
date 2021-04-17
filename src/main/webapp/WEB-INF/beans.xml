@@ -1,0 +1,6 @@
+<!-- WebContent/WEB-INF/beans.xml -->
+<beans>
+    <interceptors>
+        <class>main.java.br.com.caelum.livraria.tx.GerenciadorDeTransacao</class>
+    </interceptors>
+</beans>

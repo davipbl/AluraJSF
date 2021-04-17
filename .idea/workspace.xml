@@ -2,42 +2,97 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="livraria-jsf exploded" />
+      <artifact name="livraria-maven:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b2f4d2e4-7aae-4463-a996-6c62f9185076" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebContent/META-INF/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/WEB-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/weld-servlet-2.3.3.Final.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/AutorDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/LivroDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/tx/GerenciadorDeTransacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/tx/Transacional.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/util/JsfUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/livraria_jsf_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/livraria_jsf_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/livraria_maven_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/livraria_maven_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_api_2_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_faces_jsf_impl_2_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_weld_servlet_weld_servlet_2_3_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_primefaces_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_primefaces_themes_all_themes_1_0_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/livraria-maven.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/livraria/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/livraria/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/livraria/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/livraria/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/livraria/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/livraria/livraria.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/livraria_jsf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/livraria_jsf_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Mojarra_2_2_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Mojarra_2_2_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/livraria-jsf.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/livraria-jsf.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria-jsf/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/bean/AutorBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/bean/AutorBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/bean/LivroBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/bean/LivroBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/bean/LoginBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/bean/LoginBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/dao/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/dao/DAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/dao/JPAUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/dao/JPAUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/dao/UsuarioDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/dao/UsuarioDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/modelo/Livro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/modelo/Livro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/livraria-jsf/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/AutorBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/AutorBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/LivroBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/LivroBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/LoginBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/LoginBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/VendasBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/VendasBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/JPAUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/JPAUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/UsuarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/UsuarioDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/modelo/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/modelo/Livro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/modelo/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/modelo/Venda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/tema/TemaBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/TemaBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/all-themes-1.0.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/hibernate-commons-annotations-4.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/hibernate-core-4.1.8.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/hibernate-entitymanager-4.1.8.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/hibernate-validator-4.3.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/javassist-3.15.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/javax.faces-2.2.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jboss-logging-3.1.0.GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/mysql-connector-java-5.1.22-bin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/postgresql-42.2.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/primefaces-8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/validation-api-1.0.0.GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/lib/weld-servlet-2.3.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/livraria-jsf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/livraria-jsf.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/bean/AutorBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/bean/LivroBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/bean/LoginBean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/dao/DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/dao/JPAUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/dao/PopulaBanco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/dao/UsuarioDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/modelo/Autor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/modelo/Livro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/modelo/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/util/Autorizador.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/livraria-jsf/br/com/caelum/livraria/util/LogPhaseListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/AutorBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/bean/AutorBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/LivroBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/bean/LivroBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/LoginBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/bean/LoginBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/TemaBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/bean/TemaBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/bean/VendasBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/bean/VendasBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/AutorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/dao/AutorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/dao/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/JPAUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/dao/JPAUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/LivroDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/dao/LivroDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/PopulaBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/dao/PopulaBanco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/dao/UsuarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/dao/UsuarioDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/modelo/Autor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/modelo/Autor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/modelo/Livro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/modelo/Livro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/modelo/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/modelo/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/modelo/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/modelo/Venda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/tx/GerenciadorDeTransacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/tx/GerenciadorDeTransacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/tx/Transacional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/tx/Transacional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/util/Autorizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/util/Autorizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/util/JsfUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/util/JsfUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/livraria/util/LogPhaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/caelum/livraria/util/LogPhaseListener.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +100,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="DISPLAY_NOTIFICATION_POPUP" value="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -82,33 +154,38 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.1488764" />
     <property name="project.structure.side.proportion" value="0.21243885" />
-    <property name="settings.editor.selected.configurable" value="Web Contexts" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\Alura\livraria-jsf\WebContent\WEB-INF\lib" />
-      <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\Alura\livraria-jsf\lib" />
-      <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\Alura\livraria-jsf\WebContent" />
-      <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\livraria-jsf\lib" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="br.com.caelum.livraria.tx" />
       <recent name="br.com.caelum.livraria.dao" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\Alura\livraria-jsf\src\main\java" />
+      <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\Alura\livraria-jsf\src\main\webapp" />
+      <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\Alura\livraria-jsf\src\main\resources" />
+      <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\Alura\livraria-jsf\WebContent" />
+      <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\Alura\livraria-jsf\WebContent\WEB-INF\lib" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="main.java.br.com.caelum.livraria.bean" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.caelum.livraria.bean" />
       <recent name="br.com.caelum.livraria.modelo" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\Alura\livraria-jsf\WebContent" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\Alura\livraria-jsf\WebContent\WEB-INF\lib" />
       <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\Alura\livraria-jsf\lib" />
-      <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\Alura\livraria-jsf\WebContent\WEB-INF" />
+      <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\Alura\livraria-jsf\WebContent" />
+      <recent name="C:\Users\Davi\Desktop\Davi 2021\Aprendizado\Java\livraria-jsf\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -205,9 +282,7 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="livraria-jsf" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JBossConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -275,13 +350,11 @@
     <configuration name="livro.xhtml" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/livraria_jsf_war_exploded/livro.xhtml">
       <method v="2" />
     </configuration>
-    <configuration name="Tomcat 8.5.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 8.5.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" editBeforeRun="true" APPLICATION_SERVER_NAME="Tomcat 8.5.65" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/livraria_jsf/livro.xhtml" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="update-resources" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="livraria-jsf exploded">
+        <artifact name="livraria-maven:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/livraria_jsf" />
           </settings>
@@ -346,7 +419,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="livraria-jsf exploded" />
+          <artifact name="livraria-maven:war exploded" />
         </option>
       </method>
     </configuration>
@@ -452,7 +525,9 @@
       <workItem from="1618334021829" duration="563000" />
       <workItem from="1618334629939" duration="2236000" />
       <workItem from="1618336898653" duration="17795000" />
-      <workItem from="1618399605056" duration="51738000" />
+      <workItem from="1618399605056" duration="52007000" />
+      <workItem from="1618529186426" duration="3210000" />
+      <workItem from="1618669351514" duration="1666000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1618358617642</created>
@@ -482,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618514344844</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Término parcial do terceiro módulo da Alura com JSF">
+      <created>1618528866135</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618528866135</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,6 +588,7 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Conclusão do primeiro módulo da Alura com JSF" />
     <MESSAGE value="Conclusão do segundo módulo da Alura com JSF" />
-    <option name="LAST_COMMIT_MESSAGE" value="Conclusão do segundo módulo da Alura com JSF" />
+    <MESSAGE value="Término parcial do terceiro módulo da Alura com JSF" />
+    <option name="LAST_COMMIT_MESSAGE" value="Término parcial do terceiro módulo da Alura com JSF" />
   </component>
 </project>
